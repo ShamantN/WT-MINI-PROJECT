@@ -1,0 +1,87 @@
+.bg{
+    display: flex;
+    flex-direction: column;
+	background-color: rgba(3, 54, 125, 0.7);
+    height: 100%;
+    width: 100%;
+}
+    
+
+
+.destContainer{
+    width: 100%;
+    margin-top: auto;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center contents */
+}
+
+.destContainer h1{
+    margin-right: 1350px;
+    font-family: 'cool_font';
+    font-size: 60px;
+}
+
+.firstRow, .secondRow {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-evenly; /* Space out the videos evenly */
+    width: 100%; /* Take full width of the parent contcainer */
+}
+
+.firstRow{
+    margin-bottom: 30px;
+}
+
+.vidContainer {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    height: 280px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 20px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 1); 
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+.vidContainer:hover{
+    transform: scale(1.1);}
+
+.vidContainer video {
+    width: 100%; 
+    height: 100%; 
+}
+
+.slidesContainer{
+    width: 100%;
+    height:450px;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid black;
+    box-shadow: 4px 15px 5px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    background-color: purple;
+}
+
+.button1 {
+    margin-top: 350px;
+    margin-left: 80px;
+    color: rgb(99, 212, 0);
+    font-family: 'cool_font';
+    font-size: 40px;
+    background-color: rgba(0, 0, 139, 0.5);
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+.button1:hover{
+    background-color: lightcoral; 
+    transform: scale(1.05); 
+}
+
+
+

@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'cool_font';
+  src: url('fonts/cool_font.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body1 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+
+form{
+  margin-top: 50px;
+}
+
+/* Login box styling */
+.login_box1 {
+  margin-top: 85px;
+  height: 600px;
+  flex: 1;
+  padding: 30px;
+  border-radius: 60px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 1); 
+  position: relative;
+}
+
+.video_container1 {
+  object-fit: cover;
+  border-radius: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+/* Main title styling */
+.login_box1 h1 {
+  font-size: 70px;
+  font-family: 'cool_font';
+  color: solid black;
+  margin: 0 0 15px;
+}
+
+/* Sign-in header styling */
+form h1 {
+  font-size: 50px;
+  font-family: 'cool_font';
+  color: solid black;
+  margin-bottom: 25px;
+}
+
+/* Input fields styling */
+.textField {
+  height: 30px;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid black; /* Border color matches button */
+  border-radius: 8px;
+  font-size: 20px;
+  color:aqua;
+  background-color: transparent; /* Semi-transparent for effect */
+  transition: border-color 0.3s;
+}
+
+.textField:focus {
+  border-color: white; /* Darker border on focus */
+  outline: none;
+}
+
+/* Button container for vertical alignment */
+.button_container {
+  display: flex;
+  justify-content: center;
+	width: 100%;
+  margin-top: 40px;
+}
+
+/* Styling for Sign-in and Create Account buttons */
+.button_style2 {
+  color: aquamarine;
+  font-family:  Helvetica;
+  font-weight: bold;
+  font-size: 20px;
+	background-color: rgba(0, 0, 139, 0.8);
+	border-radius: 10px;
+	border: 2px solid black;
+	width: 500px	;
+  height: 60px;
+	padding-top:10px ;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.1s;
+}
+
+.button_style2:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Divider line between buttons */
+hr {
+  width: 85%;
+  border: 0;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+}
