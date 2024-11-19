@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
 .bg{
+    background-image: url("../images/aeroplane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-	background-color: rgba(3, 54, 125, 0.7);
     height: 100%;
     width: 100%;
 }
@@ -17,9 +21,11 @@
 }
 
 .destContainer h1{
+    color:white;
     margin-right: 1350px;
     font-family: 'cool_font';
     font-size: 60px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 .firstRow, .secondRow {
@@ -33,11 +39,15 @@
 }
 
 .vidContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid black;
     height: 280px;
-    width: 500px;
+    width: 495px;
     overflow: hidden;
     border-radius: 20px; 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 1); 
@@ -52,36 +62,121 @@
     height: 100%; 
 }
 
-.slidesContainer{
-    width: 100%;
-    height:450px;
-    display: flex;
-    justify-content: flex-end;
-    border: 2px solid black;
-    box-shadow: 4px 15px 5px rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    background-color: purple;
+.vidContainerText{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Montserrat';
+    color: white;
 }
 
-.button1 {
-    margin-top: 350px;
-    margin-left: 80px;
-    color: rgb(99, 212, 0);
-    font-family: 'cool_font';
-    font-size: 40px;
-    background-color: rgba(0, 0, 139, 0.5);
-    border-radius: 15px;
+
+.slidesContainer {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 2px solid black;
-    width: 150px;
+    box-shadow: 4px 10px 5px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url("../images/island.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.slidesContainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 57, 57, 0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.slidesContainer h1{
+    z-index: 1;
+    font-size: 60px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.slidesContainer p{
+    z-index: 1;
+    margin-bottom: -10px;
+    color: white;
+    font-family:'Montserrat';
+}
+
+.button1{
+    z-index: 1;
+    margin-top: 80px;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 70px;
+    border: 2px solid black;
+    width: 200px;
     height: 60px;
     padding: 10px;
-    transition: background-color 0.3s ease, transform 0.1s;
+    transition: background-color 0.4s ease, transform 0.1s;
 }
 
 .button1:hover{
-    background-color: lightcoral; 
-    transform: scale(1.05); 
+    transform: scale(1.1); 
 }
 
+.slidesContainer input{
+    border: 3px solid gray;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    color: black;
+    height: 38px;
+    margin-right: 1370px;
+    margin-top: -80px;
+    border-radius: 7px;
+    width: 270px;
+    z-index: 1;
+}
 
+.popupSearchWindow{
+    margin-right: 1372px;
+    margin-bottom: 200px;
+    position: absolute;
+    font-family: 'Montserrat';
+    background-color: white;
+    width: 285px;
+    height: 200px;
+    border: 3px solid gray;
+    border-radius: 7px;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.popupSearchWindow p {
+    color: black;
+    margin: 5px 0;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.popupSearchWindow button{
+    border-radius: 7px;
+    color: black;
+    background-color: lightgray;
+    font-family: 'Montserrat';
+    text-align: left;
+    height: 40px;
+    width: 285px;
+}
 
